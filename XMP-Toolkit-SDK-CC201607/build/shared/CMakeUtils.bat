@@ -23,7 +23,7 @@ set XMPROOT=%buildSharedLoc%/../..
 
 :: Default Generator
 set GeneratorVersion=Visual Studio 17 2022
-set GeneratorToolset=v140
+set GeneratorToolset=v141
 set GeneratorArchitecture=Win64
 set CMake_Arch64Bit=ON
 set CMake_ARCH=x64
