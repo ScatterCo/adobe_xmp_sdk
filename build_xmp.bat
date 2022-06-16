@@ -15,7 +15,9 @@ set GENERATE_ALL=Off
 set NEXT_LABEL=ok
 
 echo "Generating XMPSDKToolkit Static x64"
-set VS_VERSION=2015
+set VS_VERSION=2022
+set CMAKE_GENERATOR="Visual Studio 17 2022"
+set CMAKE_GENERATOR_TOOLSET="v140"
 set BUILD_TYPE=Static
 set BITS=64
 GOTO GenerateNow

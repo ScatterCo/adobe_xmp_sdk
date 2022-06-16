@@ -41,7 +41,9 @@ set GENERATE_ALL=On
 
 :32DLL
 echo "Generating XMPSDKToolkit Dynamic Win32"
-set VS_VERSION=2015
+set VS_VERSION=2022
+set CMAKE_GENERATOR="Visual Studio 17 2022"
+set CMAKE_GENERATOR_TOOLSET="v140"
 set BUILD_TYPE=Dynamic
 set BITS=32
 IF "%GENERATE_ALL%"=="On" (
@@ -52,7 +54,9 @@ GOTO GenerateNow
 
 :32LIB
 echo "Generating XMPSDKToolkit Static Win32"
-set VS_VERSION=2015
+set VS_VERSION=2022
+set CMAKE_GENERATOR="Visual Studio 17 2022"
+set CMAKE_GENERATOR_TOOLSET="v140"
 set BUILD_TYPE=Static
 set BITS=32
 IF "%GENERATE_ALL%"=="On" (
@@ -62,7 +66,9 @@ GOTO GenerateNow
 
 :64DLL
 echo "Generating XMPSDKToolkit Dynamic x64"
-set VS_VERSION=2015
+set VS_VERSION=2022
+set CMAKE_GENERATOR="Visual Studio 17 2022"
+set CMAKE_GENERATOR_TOOLSET="v140"
 set BUILD_TYPE=Dynamic
 set BITS=64
 IF "%GENERATE_ALL%"=="On" (
@@ -72,7 +78,9 @@ GOTO GenerateNow
 
 :64LIB
 echo "Generating XMPSDKToolkit Static x64"
-set VS_VERSION=2015
+set VS_VERSION=2022
+set CMAKE_GENERATOR="Visual Studio 17 2022"
+set CMAKE_GENERATOR_TOOLSET="v140"
 set BUILD_TYPE=Static
 set BITS=64
 IF "%GENERATE_ALL%"=="On" (
